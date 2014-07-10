@@ -1,4 +1,4 @@
 blackjack21
 ===========
 
-blackjack game
+simple blackjack game

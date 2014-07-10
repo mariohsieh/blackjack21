@@ -1,0 +1,23 @@
+{
+  "name": "blackjack21",
+  "version": "0.0.1",
+  "description": "multiplayer blackjack app with web sockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariohsieh/blackjack21"
+  },
+  "author": "Mario Hsieh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mariohsieh/blackjack21/issues"
+  },
+  "homepage": "https://github.com/mariohsieh/blackjack21",
+  "dependencies": {
+	"express": "~3.x",
+	"socket.io": "latest"
+  }
+}
