@@ -1,0 +1,14 @@
+/* main stylesheet */
+
+@import "modules/main/reset.css";
+@import "modules/main/global";
+
+//// main header ////
+header {
+	h1 {
+		height: 50px;
+		line-height: 50px;
+		background-color: #000;
+		color: #fff;
+	}
+}

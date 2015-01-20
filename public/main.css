@@ -1,0 +1,85 @@
+/* main stylesheet */
+@import url(modules/main/reset.css);
+html {
+  font-family: 'Ubuntu Mono', monospace;
+  box-sizing: border-box; }
+  html *, html *:before, html *:after {
+    font-family: inherit;
+    box-sizing: inherit; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: .83em; }
+
+h6 {
+  font-size: .75em; }
+
+.center {
+  margin: 0 auto; }
+
+.absoluteCenter {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.textLeft {
+  text-align: left; }
+
+.textCenter {
+  text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.pointer {
+  cursor: pointer; }
+
+.block {
+  display: block; }
+
+.inlineBlock {
+  display: inline-block; }
+
+.overlay {
+  position: fixed;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85); }
+
+header h1 {
+  height: 50px;
+  line-height: 50px;
+  background-color: #000;
+  color: #fff; }
+
+/*# sourceMappingURL=main.css.map */

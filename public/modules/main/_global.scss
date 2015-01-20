@@ -1,0 +1,115 @@
+//**********************************
+//a list of global CSS definitions
+//**********************************
+
+// default parameters for entire document
+html {
+	font-family: 'Ubuntu Mono', monospace;
+	//font-size: 100%;
+	box-sizing: border-box;
+	*, *:before, *:after {
+		font-family: inherit;
+		//font-size: inherit;
+		box-sizing: inherit;
+	}
+}
+
+
+// tag selectors //
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.17em;
+}
+h4 {
+	font-size: 1em;
+}
+h5 {
+	font-size: .83em;
+}
+h6 {
+	font-size: .75em;
+}
+
+
+// class styles //
+.center {
+	margin: 0 auto;
+}
+
+.absoluteCenter {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.textLeft {
+	text-align: left;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.textRight {
+	text-align: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.block {
+	display: block;
+}
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.overlay {
+	position: fixed;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.85);
+}
+
+
+//// mixins ////
+@mixin borderRadius($radius) {
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
+// placeholder selectors //
+
