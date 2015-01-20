@@ -18,7 +18,7 @@ function DeckOfCards() {
 				newCards.push(suits[key]+i);
 			}
 		}
-				
+
 		for (i=0;i<52;i++) {
 			var length = newCards.length;
 			var randomCard = Math.floor(Math.random()*length);
@@ -27,7 +27,7 @@ function DeckOfCards() {
 		}
 		console.log(this.cards);
 	}
-	
+
 	// method to deal one card
 	this.dealCard = function() {
 		return this.cards.pop();
@@ -45,9 +45,9 @@ function Player(name) {
 
 // game loop //
 function gameLoop() {
-	
-	console.log(playerList[1].cards);	
-	
+
+	console.log(playerList[1].cards);
+
 	// insurance condition
 	var last = playerList.length-1;
 	var dealerShowCard = playerList[last].cards[1].slice(1);
@@ -68,7 +68,7 @@ function gameLoop() {
 // calculate hand value
 function handCalc(cards) {
 	var hand = 0;
-	
+
 	// determine value of a card
 	function getCardValue(card) {
 		var value = card.slice(1);
@@ -79,7 +79,7 @@ function handCalc(cards) {
 			value = 10;
 		return value;
 	}
-	
+
 	for (key in cards) {
 		console.log(cards[key]);
 		hand += getCardValue(cards[key]);
@@ -87,28 +87,28 @@ function handCalc(cards) {
 
 	// case of double Aces
 	hand = 12;
-	
+
 	return hand;
 }
 
 
 ///// game start ////
 function initialize() {
-	
+
 	// initialize deck of cards
 	var deck = new DeckOfCards();
-		
+
 	var dealer = new Player('dealer');
 	playerList.push(dealer);
 
 	// deal 2 cards to players and dealer
-	for (var i=1;i<3;i++) {
+	for (var i=0;i<2;i++) {
 		//playerList[0].cards.push(deck.dealCard());
 		for (key in playerList) {
 			playerList[key].cards.push(deck.dealCard());
 		}
 	}
-	
+
 	//console.log(playerList[0].cards);
 	//console.log(playerList[1].cards);
 	//console.log(deck.cards.length);
